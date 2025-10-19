@@ -222,7 +222,6 @@ int move_cursor(int w_width, int w_height)
     return 1;
 }
 
-
 int main()
 {
     clearFile();
@@ -247,7 +246,10 @@ int main()
     for (int i=len_num(num)-1; i>=0; i--)
     {
         choice(digits[i]);
-        move_cursor(w_width, w_height);
+        if (move_cursor(w_width, w_height)==0)
+        {
+            break;
+        }
     }
 
     fclose(fptr);
