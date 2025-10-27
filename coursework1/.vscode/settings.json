@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "graphics.h": "c",
+        "background.h": "c",
+        "window.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c",
+        "foreground.h": "c"
+    }
+}
